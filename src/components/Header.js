@@ -1,12 +1,12 @@
 import React from "react";
-import HeaderImage from "../assets/desktop/image-header.jpg";
 import Logo from "./Logo.js";
+import { FaBars } from "react-icons/fa";
 
 const Header = () => {
   return (
     <>
       <div className="header">
-        <img className="header__image" src={HeaderImage} alt="" />
+        <img className="header__image" alt="" />
         <div className="header__heading">
           <div className="details">
             <h1>We are creatives</h1>
@@ -33,6 +33,9 @@ const Header = () => {
               <a href="/">Projects</a>
               <a href="/">Contact</a>
             </nav>
+            <div className="header__hamburger">
+              <FaBars />
+            </div>
           </div>
         </div>
       </div>

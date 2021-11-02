@@ -60,10 +60,23 @@ a {
 }
 
 .header__image {
+  background-image: url("http://localhost:3000/images/desktop/image-header.jpg");
   width: 100%;
   height: 100%;
   background-position: center center;
   background-size: cover;
+}
+
+@media (max-width: 639px) {
+  .header__image {
+    background-image: url("http://localhost:3000/images/mobile/image-header.jpg");
+  }
+}
+
+@media (max-width: 639px) {
+  .header__nav-links {
+    display: none;
+  }
 }
 
 .header__nav-links > a {
@@ -78,6 +91,18 @@ a {
 .header__nav-links > a:hover {
   background-color: white;
   color: black;
+}
+
+.header__hamburger {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 639px) {
+  .header__hamburger {
+    display: block;
+  }
 }
 
 .header__heading {
