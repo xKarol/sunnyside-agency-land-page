@@ -3,6 +3,7 @@
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   &__card {
     position: relative;
+    overflow: hidden;
   }
   &__image {
     width: 100%;

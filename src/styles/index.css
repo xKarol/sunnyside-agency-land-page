@@ -149,6 +149,7 @@ a {
 
 .section__card {
   position: relative;
+  overflow: hidden;
 }
 
 .section__image {
@@ -360,6 +361,7 @@ a {
           transform: translateX(-50%);
   font-size: 12px;
   font-weight: 400;
+  text-align: center;
 }
 
 .footer > span > a {
