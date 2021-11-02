@@ -1,0 +1,11 @@
+.images {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  width: 100vw;
+  > img {
+    width: 25%;
+    height: 100%;
+    background-size: cover;
+  }
+}

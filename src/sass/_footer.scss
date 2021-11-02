@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   padding: 50px 0;
+  position: relative;
   &__links {
     margin: 25px 0 50px 0;
     a {
@@ -22,5 +23,19 @@
   &__socials a {
     cursor: pointer;
     margin: 10px;
+  }
+  > span {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-weight: 400;
+
+    > a {
+      font-size: 12px;
+      font-weight: 600;
+      color: $footer-color;
+    }
   }
 }
