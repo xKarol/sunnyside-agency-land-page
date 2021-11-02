@@ -242,4 +242,44 @@ section .section__button.red::before {
   color: #818498;
   font-size: 11px;
 }
+
+.footer {
+  background-color: #91d4c6;
+  color: #458c7e;
+  width: 100%;
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.footer__links {
+  margin: 25px 0 50px 0;
+}
+
+.footer__links a {
+  color: #458c7e;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer__links a:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__socials a {
+  cursor: pointer;
+  margin: 10px;
+}
 /*# sourceMappingURL=index.css.map */

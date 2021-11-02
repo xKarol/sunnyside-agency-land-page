@@ -4,6 +4,7 @@ import "./styles/index.css";
 import Header from "./components/Header.js";
 import Section from "./components/Section.js";
 import Opinion from "./components/Opinion.js";
+import Footer from "./components/Footer.js";
 
 import SectionImg1 from "./assets/desktop/image-transform.jpg";
 import SectionImg2 from "./assets/desktop/image-stand-out.jpg";
@@ -71,8 +72,13 @@ ReactDOM.render(
           job="Business Owner"
         />
       </div>
-      About Services Projects Contact
     </div>
+    <div className="images">
+      <Image src={SectionImg1} />
+      <Image src={SectionImg2} />
+      <Image src={SectionImg4} />
+    </div>
+    <Footer></Footer>
   </React.StrictMode>,
   document.getElementById("root")
 );

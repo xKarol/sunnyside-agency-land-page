@@ -1,0 +1,26 @@
+.footer {
+  background-color: $footer-background-color;
+  color: $footer-color;
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  &__links {
+    margin: 25px 0 50px 0;
+    a {
+      color: $footer-color;
+      font-weight: 400;
+      font-size: 14px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
+  &__socials a {
+    cursor: pointer;
+    margin: 10px;
+  }
+}

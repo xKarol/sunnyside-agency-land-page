@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderImage from "../assets/desktop/image-header.jpg";
-import Logo from "../assets/logo.svg";
+import Logo from "./Logo.js";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <img className="header__image" src={HeaderImage} alt="" />
         <div className="header__nav-bar">
           <div className="header__nav">
-            <img src={Logo} alt="" />
+            <Logo />
             <nav className="header__nav-links">
               <a href="/">About</a>
               <a href="/">Services</a>
