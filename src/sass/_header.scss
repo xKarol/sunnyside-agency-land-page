@@ -1,5 +1,5 @@
 .header {
-  width: 100%;
+  height: 700px;
   position: relative;
   &__nav {
     display: flex;
@@ -45,6 +45,7 @@
       align-items: center;
     }
     h1 {
+      text-align: center;
       text-transform: uppercase;
       font-family: "Fraunces";
       letter-spacing: 5px;

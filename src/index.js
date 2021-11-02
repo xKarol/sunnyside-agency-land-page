@@ -15,7 +15,7 @@ import SectionImg4 from "./assets/desktop/image-photography.jpg";
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <section>
+    <section className="section">
       <Section
         title="Transform your brand"
         text="We are a full-service creative agency specializing in helping brands grow

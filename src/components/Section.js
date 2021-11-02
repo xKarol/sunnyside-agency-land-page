@@ -3,8 +3,8 @@ import React from "react";
 const Section = ({ title, text, src, button, bottom }) => {
   return (
     <>
-      <section className="section">
-        {src && <img src={src} alt="" />}
+      <section className="section__card">
+        {src && <img className="section__image" src={src} alt="" />}
         {title && text && (
           <div
             className={
