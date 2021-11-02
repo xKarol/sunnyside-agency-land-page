@@ -33,4 +33,25 @@
       }
     }
   }
+  &__heading {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    .details {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      text-transform: uppercase;
+      font-family: "Fraunces";
+      letter-spacing: 5px;
+      color: $white;
+      font-size: 35px;
+      font-weight: 900;
+      margin-bottom: 50px;
+    }
+  }
 }
