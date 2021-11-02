@@ -1,0 +1,59 @@
+.testimonials {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 120px 50px;
+  > h1 {
+    font-family: "Fraunces";
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: hsl(232, 10%, 55%);
+  }
+  &__section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+  &__avatar {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  &__text {
+    margin: 50px 0;
+    text-align: center;
+    color: hsl(198, 62%, 26%);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    height: 150px;
+  }
+  &__details {
+    text-align: center;
+    > h1 {
+      font-family: "Fraunces";
+      font-weight: 900;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    > p {
+      font-weight: 600;
+      color: hsl(232, 10%, 55%);
+      font-size: 11px;
+    }
+  }
+}

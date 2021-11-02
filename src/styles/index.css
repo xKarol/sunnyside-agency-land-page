@@ -1,3 +1,17 @@
+/*### Primary
+
+- Soft red: hsl(7, 99%, 70%)
+- Yellow: hsl(51, 100%, 49%)
+- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+- Dark blue (photography text): hsl(198, 62%, 26%)
+- Dark moderate cyan (footer): hsl(168, 34%, 41%)
+
+### Neutral
+
+- Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%)*/
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 *,
 *::before,
@@ -7,14 +21,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: 18px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Barlow", sans-serif;
   font-weight: 600;
 }
 
-/* 
-body {
-
-} */
 a {
   color: #000;
   text-decoration: none;
@@ -68,5 +78,168 @@ a {
 .header__nav-links > a:hover {
   background-color: white;
   color: black;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+section .section {
+  position: relative;
+}
+
+section .section > img {
+  background-size: cover;
+}
+
+section .section__details {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+
+section .section__details.bottom {
+  bottom: 0px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+
+section .section__title {
+  color: #25564b;
+  font-weight: 900;
+  font-size: 40px;
+  font-family: "Fraunces";
+}
+
+section .section__text {
+  color: #19536b;
+  margin: 30px 0;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+section .section__button {
+  color: #25564b;
+  font-weight: 900;
+  font-size: 20px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  position: relative;
+  cursor: pointer;
+}
+
+section .section__button::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: -5px;
+  right: -5px;
+  background-color: rgba(250, 212, 0, 0.5);
+  height: 5px;
+  border-radius: 25px;
+  z-index: -1;
+}
+
+section .section__button.red::before {
+  background-color: rgba(254, 120, 103, 0.5);
+}
+
+.testimonials {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 120px 50px;
+}
+
+.testimonials > h1 {
+  font-family: "Fraunces";
+  letter-spacing: 5px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  color: #818498;
+}
+
+.testimonials__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.testimonials__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 300px;
+}
+
+.testimonials__card:not(:last-child) {
+  margin-right: 5px;
+}
+
+.testimonials__avatar {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonials__text {
+  margin: 50px 0;
+  text-align: center;
+  color: #19536b;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  height: 150px;
+}
+
+.testimonials__details {
+  text-align: center;
+}
+
+.testimonials__details > h1 {
+  font-family: "Fraunces";
+  font-weight: 900;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.testimonials__details > p {
+  font-weight: 600;
+  color: #818498;
+  font-size: 11px;
 }
 /*# sourceMappingURL=index.css.map */
