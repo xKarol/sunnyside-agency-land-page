@@ -7,11 +7,6 @@ import Opinion from "./components/Opinion.js";
 import Footer from "./components/Footer.js";
 import Image from "./components/Image.js";
 
-import SectionImg1 from "./assets/desktop/image-transform.jpg";
-import SectionImg2 from "./assets/desktop/image-stand-out.jpg";
-import SectionImg3 from "./assets/desktop/image-graphic-design.jpg";
-import SectionImg4 from "./assets/desktop/image-photography.jpg";
-
 ReactDOM.render(
   <React.StrictMode>
     <Header />
@@ -23,8 +18,12 @@ ReactDOM.render(
       marketing for you."
         button="yellow"
       />
-      <Section src={SectionImg1} />
-      <Section src={SectionImg2} />
+      <Section
+        src={"http://localhost:3000/images/desktop/image-transform.jpg"}
+      />
+      <Section
+        src={"http://localhost:3000/images/desktop/image-stand-out.jpg"}
+      />
       <Section
         title="Stand out to the right audience"
         text="Using a collaborative formula of designers, researchers,
@@ -37,14 +36,14 @@ ReactDOM.render(
         text="Great design makes you memorable. We deliver artwork
       that underscores your brand message and captures potential clients’
       attention."
-        src={SectionImg3}
+        src={"http://localhost:3000/images/desktop/image-graphic-design.jpg"}
         bottom={true}
       />
       <Section
         title="Photography"
         text="Increase your credibility by getting the most
       stunning, high-quality photos that improve your business image."
-        src={SectionImg4}
+        src={"http://localhost:3000/images/desktop/image-photography.jpg"}
         bottom={true}
       />
     </section>
@@ -52,21 +51,21 @@ ReactDOM.render(
       <h1>Client Testimonials</h1>
       <div className="testimonials__section">
         <Opinion
-          avatar={SectionImg4}
+          avatar={"http://localhost:3000/images/image-emily.jpg"}
           name="Emily R."
           text="We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit."
           job="Marketing Director"
         />
         <Opinion
-          avatar={SectionImg4}
+          avatar={"http://localhost:3000/images/image-thomas.jpg"}
           name="Thomas S."
           text="Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
       success made it a satisfying and enjoyable experience."
           job="Chief Operating Officer"
         />
         <Opinion
-          avatar={SectionImg4}
+          avatar={"http://localhost:3000/images/image-jennie.jpg"}
           name="Jennie F."
           text="Incredible end result! Our sales increased over 400% when we worked with
       Sunnyside. Highly recommended!"
@@ -75,10 +74,22 @@ ReactDOM.render(
       </div>
     </div>
     <div className="images">
-      <Image src={SectionImg1} />
-      <Image src={SectionImg2} />
-      <Image src={SectionImg3} />
-      <Image src={SectionImg4} />
+      <Image
+        src={
+          "http://localhost:3000/images/desktop/image-gallery-milkbottles.jpg"
+        }
+      />
+      <Image
+        src={"http://localhost:3000/images/desktop/image-gallery-orange.jpg"}
+      />
+      <Image
+        src={"http://localhost:3000/images/desktop/image-gallery-cone.jpg"}
+      />
+      <Image
+        src={
+          "http://localhost:3000/images/desktop/image-gallery-sugarcubes.jpg"
+        }
+      />
     </div>
     <Footer />
   </React.StrictMode>,

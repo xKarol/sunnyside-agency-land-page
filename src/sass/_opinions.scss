@@ -12,17 +12,17 @@
     color: hsl(232, 10%, 55%);
   }
   &__section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
   &__card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 300px;
+
     &:not(:last-child) {
       margin-right: 5px;
+      margin-bottom: 15px;
     }
   }
   &__avatar {

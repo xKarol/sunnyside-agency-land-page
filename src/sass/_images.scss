@@ -1,7 +1,6 @@
 .images {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  height: 400px;
   > img {
     height: 100%;
     width: 100%;
