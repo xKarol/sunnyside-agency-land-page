@@ -15,13 +15,13 @@
     right: 0;
   }
   &__image {
-    background-image: url("http://localhost:3000/images/desktop/image-header.jpg");
     width: 100%;
     height: 100%;
+    background-image: url("images/desktop/image-header.jpg");
     background-position: center center;
     background-size: cover;
     @include breakpoint-down(small) {
-      background-image: url("http://localhost:3000/images/mobile/image-header.jpg");
+      background-image: url("images/mobile/image-header.jpg");
     }
   }
   &__nav-links {

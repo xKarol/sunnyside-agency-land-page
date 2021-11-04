@@ -9,7 +9,12 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        <img className="header__image" alt="" />
+        {/* <img
+          className="header__image"
+          src="images/desktop/image-header.jpg"
+          alt=""
+        /> */}
+        <div className="header__image" />
         <div className="header__heading">
           <div className="details">
             <h1>We are creatives</h1>
@@ -73,7 +78,7 @@ const CloseIcon = styled(VscChromeClose)`
   position: absolute;
   top: 27px;
   right: 25px;
-  &:hover{
+  &:hover {
     font-weight: bold;
   }
 `;
