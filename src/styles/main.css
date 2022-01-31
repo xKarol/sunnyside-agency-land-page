@@ -95,6 +95,8 @@ a {
 }
 
 .header__hamburger {
+  background-color: transparent;
+  border: none;
   display: none;
   cursor: pointer;
   color: #fff;
@@ -261,7 +263,6 @@ a {
   text-transform: uppercase;
   font-family: "Fraunces", serif;
   background-color: transparent;
-  outline: none;
   border: none;
   position: relative;
   cursor: pointer;

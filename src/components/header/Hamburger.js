@@ -6,11 +6,12 @@ import HeaderContext from "../../context/HeaderContext";
 export default function Hamburger() {
   const { opened, setOpenHamburger } = useContext(HeaderContext);
   return (
-    <div
+    <button
       className="header__hamburger"
       onClick={() => setOpenHamburger(!opened)}
+      aria-label="hamburger-menu"
     >
       {opened ? <GrClose /> : <FaBars />}
-    </div>
+    </button>
   );
 }

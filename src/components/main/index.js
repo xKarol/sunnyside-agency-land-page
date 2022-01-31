@@ -10,8 +10,14 @@ export default function Main() {
       marketing for you."
         button="yellow"
       />
-      <Card src={"images/desktop/image-transform.jpg"} />
-      <Card src={"images/desktop/image-stand-out.jpg"} />
+      <Card
+        src={"images/desktop/image-transform.jpg"}
+        alt={"transform your brand"}
+      />
+      <Card
+        src={"images/desktop/image-stand-out.jpg"}
+        alt={"stand out to the right audience"}
+      />
       <Card
         title="Stand out to the right audience"
         text="Using a collaborative formula of designers, researchers,

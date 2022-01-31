@@ -1,3 +1,3 @@
-export default function GalleryImage({ src }) {
-  return <img src={src} alt="" />;
+export default function GalleryImage({ src, alt }) {
+  return <img src={src} alt={alt} />;
 }
