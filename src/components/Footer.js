@@ -1,13 +1,10 @@
-import React from "react";
 import Logo from "./Logo.js";
-
 import {
   FaFacebookSquare,
   FaInstagram,
   FaTwitter,
   FaPinterest,
 } from "react-icons/fa";
-import styled from "styled-components";
 
 const Footer = () => {
   return (
@@ -21,16 +18,16 @@ const Footer = () => {
         </div>
         <div className="footer__socials">
           <a href="/">
-            <Facebook />
+            <FaFacebookSquare />
           </a>
           <a href="/">
-            <Instagram />
+            <FaInstagram />
           </a>
           <a href="/">
-            <Twitter />
+            <FaTwitter />
           </a>
           <a href="/">
-            <Pinterest />
+            <FaPinterest />
           </a>
         </div>
         <span>
@@ -44,16 +41,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-const Facebook = styled(FaFacebookSquare)`
-  color: hsl(168, 34%, 41%);
-`;
-const Instagram = styled(FaInstagram)`
-  color: hsl(168, 34%, 41%);
-`;
-const Twitter = styled(FaTwitter)`
-  color: hsl(168, 34%, 41%);
-`;
-const Pinterest = styled(FaPinterest)`
-  color: hsl(168, 34%, 41%);
-`;

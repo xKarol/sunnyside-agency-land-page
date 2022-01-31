@@ -79,6 +79,16 @@
     height: 100vh;
     display: none;
     transition: all 0.2s ease-in-out;
+    .close-icon {
+      color: #000;
+      cursor: pointer;
+      position: absolute;
+      top: 27px;
+      right: 25px;
+      &:hover {
+        font-weight: bold;
+      }
+    }
     &.active {
       right: 0;
       display: block;

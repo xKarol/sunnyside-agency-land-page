@@ -152,6 +152,18 @@ a {
   transition: all 0.2s ease-in-out;
 }
 
+.header__hamburger-menu .close-icon {
+  color: #000;
+  cursor: pointer;
+  position: absolute;
+  top: 27px;
+  right: 25px;
+}
+
+.header__hamburger-menu .close-icon:hover {
+  font-weight: bold;
+}
+
 .header__hamburger-menu.active {
   right: 0;
   display: block;
@@ -424,6 +436,13 @@ a {
 .footer__socials a {
   cursor: pointer;
   margin: 10px;
+  color: white;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+.footer__socials a:hover {
+  color: #458c7e;
 }
 
 .footer > span {

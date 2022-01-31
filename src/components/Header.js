@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "./Logo.js";
 import { FaBars } from "react-icons/fa";
 import { VscChromeClose } from "react-icons/vsc";
-import styled from "styled-components";
+
 const Header = () => {
   const [opened, openHamburger] = useState(false);
 
@@ -56,7 +56,10 @@ const Header = () => {
                 : "header__hamburger-menu"
             }
           >
-            <CloseIcon onClick={() => openHamburger(false)} />
+            <VscChromeClose
+              className="close-icon"
+              onClick={() => openHamburger(false)}
+            />
             <ul className="header__hamburger-links">
               <a href="/">About</a>
               <a href="/">Services</a>
@@ -71,14 +74,3 @@ const Header = () => {
 };
 
 export default Header;
-
-const CloseIcon = styled(VscChromeClose)`
-  color: #000;
-  cursor: pointer;
-  position: absolute;
-  top: 27px;
-  right: 25px;
-  &:hover {
-    font-weight: bold;
-  }
-`;

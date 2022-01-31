@@ -23,6 +23,11 @@
   &__socials a {
     cursor: pointer;
     margin: 10px;
+    color: $white;
+    transition: color 200ms ease-in-out;
+    &:hover {
+      color: $footer-color;
+    }
   }
   > span {
     position: absolute;
