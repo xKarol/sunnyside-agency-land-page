@@ -1,18 +1,9 @@
-/*### Primary
-
-- Soft red: hsl(7, 99%, 70%)
-- Yellow: hsl(51, 100%, 49%)
-- Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
-- Dark blue (photography text): hsl(198, 62%, 26%)
-- Dark moderate cyan (footer): hsl(168, 34%, 41%)
-
+/*
 ### Neutral
-
 - Very dark desaturated blue: hsl(212, 27%, 19%)
 - Very dark grayish blue: hsl(213, 9%, 39%)
-- Dark grayish blue: hsl(232, 10%, 55%)
 - Grayish blue: hsl(210, 4%, 67%)*/
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Fraunces:wght@400;600;800&display=swap");
 *,
 *::before,
 *::after {
@@ -132,7 +123,7 @@ a {
 .header__heading h1 {
   text-align: center;
   text-transform: uppercase;
-  font-family: "Fraunces";
+  font-family: "Fraunces", serif;
   letter-spacing: 5px;
   color: white;
   font-size: 35px;
@@ -194,7 +185,7 @@ a {
   color: black;
 }
 
-.section {
+.main-cards {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(200px, 1fr))[2];
@@ -202,41 +193,42 @@ a {
 }
 
 @media (max-width: 1023px) {
-  .section {
+  .main-cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
 }
 
-.section__card {
-  min-width: 100%;
+.main-cards__card {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 1023px) {
-  .section__card {
+  .main-cards__card {
     min-height: 600px;
   }
-  .section__card:nth-child(4) {
+  .main-cards__card:nth-child(4) {
     -ms-grid-row: 3;
     grid-row: 3;
   }
 }
 
 @media (max-width: 639px) {
-  .section__card {
+  .main-cards__card {
     min-height: 400px;
   }
 }
 
-.section__image {
+.main-cards__image {
   width: 100%;
   height: 100%;
   background-size: cover;
 }
 
-.section__details {
+.main-cards__details {
   position: absolute;
   bottom: 50%;
   left: 50%;
@@ -244,47 +236,54 @@ a {
           transform: translate(-50%, 50%);
 }
 
-.section__details.bottom {
-  bottom: 0px;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
+.main-cards__details.bottom {
+  bottom: 20%;
 }
 
 @media (max-width: 639px) {
-  .section__details {
+  .main-cards__details {
     width: 90%;
   }
 }
 
-.section__title {
+.main-cards__title {
   color: #25564b;
   font-weight: 900;
   font-size: 40px;
-  font-family: "Fraunces";
+  font-family: "Fraunces", serif;
 }
 
-.section__text {
-  color: #19536b;
+.main-cards__text {
+  color: #818498;
   margin: 30px 0;
-  font-weight: 400;
+  font-weight: 600;
+  line-height: 1.3;
   font-size: 17px;
 }
 
-.section__button {
+.main-cards__button {
   color: #25564b;
-  font-weight: 900;
-  font-size: 20px;
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
   background-color: transparent;
   outline: none;
   border: none;
   position: relative;
   cursor: pointer;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
-.section__button::before {
+.main-cards__button:hover {
+  opacity: 0.75;
+}
+
+.main-cards__button::before {
   content: "";
   position: absolute;
-  bottom: 2px;
+  bottom: 0;
   left: -5px;
   right: -5px;
   background-color: rgba(250, 212, 0, 0.5);
@@ -293,7 +292,7 @@ a {
   z-index: -1;
 }
 
-.section__button.red::before {
+.main-cards__button.red::before {
   background-color: rgba(254, 120, 103, 0.5);
 }
 
@@ -315,7 +314,7 @@ a {
 }
 
 .testimonials > h1 {
-  font-family: "Fraunces";
+  font-family: "Fraunces", serif;
   letter-spacing: 5px;
   margin-bottom: 50px;
   text-transform: uppercase;
@@ -393,7 +392,7 @@ a {
 }
 
 .testimonials__details > h1 {
-  font-family: "Fraunces";
+  font-family: "Fraunces", serif;
   font-weight: 900;
   margin-bottom: 10px;
   font-size: 16px;
@@ -481,13 +480,13 @@ a {
 .footer__socials a {
   cursor: pointer;
   margin: 10px;
-  color: white;
-  -webkit-transition: color 200ms ease-in-out;
-  transition: color 200ms ease-in-out;
+  color: #458c7e;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .footer__socials a:hover {
-  color: #458c7e;
+  opacity: 0.5;
 }
 
 .footer > span {

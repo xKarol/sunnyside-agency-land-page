@@ -5,11 +5,11 @@
   align-items: center;
   padding: 120px 0;
   > h1 {
-    font-family: "Fraunces";
+    font-family: $font-fraunces;
     letter-spacing: 5px;
     margin-bottom: 50px;
     text-transform: uppercase;
-    color: hsl(232, 10%, 55%);
+    color: $dark-grayish-blue;
     text-align: center;
   }
   &__clients {
@@ -47,7 +47,7 @@
   &__text {
     margin: 50px 0;
     text-align: center;
-    color: hsl(198, 62%, 26%);
+    color: $dark-blue;
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
@@ -56,14 +56,14 @@
     margin-top: auto;
     text-align: center;
     > h1 {
-      font-family: "Fraunces";
+      font-family: $font-fraunces;
       font-weight: 900;
       margin-bottom: 10px;
       font-size: 16px;
     }
     > p {
       font-weight: 600;
-      color: hsl(232, 10%, 55%);
+      color: $dark-grayish-blue;
       font-size: 11px;
     }
   }
