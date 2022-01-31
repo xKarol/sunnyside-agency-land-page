@@ -15,8 +15,12 @@
       color: $footer-color;
       font-weight: 400;
       font-size: 14px;
+      transition: opacity 200ms ease-in-out;
       &:not(:last-child) {
         margin-right: 30px;
+      }
+      &:hover {
+        opacity: 0.5;
       }
     }
   }

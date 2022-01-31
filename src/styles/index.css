@@ -427,10 +427,16 @@ a {
   color: #458c7e;
   font-weight: 400;
   font-size: 14px;
+  -webkit-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
 }
 
 .footer__links a:not(:last-child) {
   margin-right: 30px;
+}
+
+.footer__links a:hover {
+  opacity: 0.5;
 }
 
 .footer__socials a {
