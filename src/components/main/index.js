@@ -15,14 +15,14 @@ export default function Main() {
       <Card
         title="Stand out to the right audience"
         text="Using a collaborative formula of designers, researchers,
-      photographers, videographers, and copywriters, we’ll build and extend your
+      photographers, videographers, and copywriters, we'll build and extend your
       brand in digital places."
         button="red"
       />
       <Card
         title="Graphic design"
         text="Great design makes you memorable. We deliver artwork
-      that underscores your brand message and captures potential clients’
+      that underscores your brand message and captures potential clients'
       attention."
         src={"images/desktop/image-graphic-design.jpg"}
         bottom={true}

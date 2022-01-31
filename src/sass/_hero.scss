@@ -1,0 +1,31 @@
+.hero {
+  height: 100vh;
+  max-height: 100vh;
+  min-height: 500px;
+  width: 100%;
+  background-image: url("images/mobile/image-header.jpg");
+  background-position: center center;
+  background-size: cover;
+  @include breakpoint-up(medium) {
+    background-image: url("images/desktop/image-header.jpg");
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $font-fraunces;
+      letter-spacing: 5px;
+      color: $white;
+      font-size: 35px;
+      font-weight: 900;
+      margin-bottom: 50px;
+    }
+  }
+}
