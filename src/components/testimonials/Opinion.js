@@ -1,6 +1,4 @@
-import React from "react";
-
-const Opinion = ({ avatar, text, name, job }) => {
+export default function Opinion({ avatar, text, name, job }) {
   return (
     <article className="testimonials__card">
       <img className="testimonials__avatar" src={avatar} alt="" />
@@ -11,6 +9,4 @@ const Opinion = ({ avatar, text, name, job }) => {
       </div>
     </article>
   );
-};
-
-export default Opinion;
+}

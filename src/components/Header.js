@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Logo from "./Logo.js";
 import { FaBars } from "react-icons/fa";
 import { VscChromeClose } from "react-icons/vsc";
 
-const Header = () => {
+export default function Header() {
   const [opened, openHamburger] = useState(false);
 
   return (
@@ -71,6 +71,4 @@ const Header = () => {
       </div>
     </>
   );
-};
-
-export default Header;
+}
