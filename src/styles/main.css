@@ -311,7 +311,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 120px 50px;
+  padding: 120px 0;
 }
 
 .testimonials > h1 {
@@ -323,14 +323,30 @@ a {
   text-align: center;
 }
 
-.testimonials__section {
+.testimonials__clients {
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[1];
+      grid-template-columns: repeat(1, minmax(250px, 1fr));
+}
+
+@media (min-width: 640px) {
+  .testimonials__clients {
+    padding: 0 25px;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials__clients {
+    padding: 0 150px;
+  }
 }
 
 .testimonials__card {
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,11 +357,16 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 5px 25px;
 }
 
-.testimonials__card:not(:last-child) {
-  margin-right: 5px;
-  margin-bottom: 15px;
+@media (max-width: 639px) {
+  .testimonials__card {
+    padding: 5px 100px;
+  }
+  .testimonials__card:not(:last-child) {
+    padding-bottom: 25px;
+  }
 }
 
 .testimonials__avatar {
@@ -364,10 +385,10 @@ a {
   font-weight: 600;
   font-size: 15px;
   line-height: 25px;
-  height: 150px;
 }
 
 .testimonials__details {
+  margin-top: auto;
   text-align: center;
 }
 
@@ -384,14 +405,32 @@ a {
   font-size: 11px;
 }
 
-.images {
+.gallery {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr))[1];
+      grid-template-columns: repeat(1, minmax(250px, 1fr));
 }
 
-.images > img {
+@media (min-width: 640px) {
+  .gallery {
+    -ms-grid-columns: (minmax(250px, 1fr))[2];
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
+    -ms-grid-rows: (minmax(250px, 1fr))[2];
+        grid-template-rows: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .gallery {
+    -ms-grid-columns: (minmax(250px, 1fr))[4];
+        grid-template-columns: repeat(4, minmax(250px, 1fr));
+    -ms-grid-rows: (minmax(250px, 1fr))[1];
+        grid-template-rows: repeat(1, minmax(250px, 1fr));
+  }
+}
+
+.gallery > img {
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -467,4 +506,4 @@ a {
   font-weight: 600;
   color: #458c7e;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=main.css.map */
