@@ -11,7 +11,9 @@ export default function App() {
       <Header />
       <Hero />
       <Main />
-      <Testimonials />
+      <main className="container">
+        <Testimonials />
+      </main>
       <Gallery />
       <Footer />
     </>

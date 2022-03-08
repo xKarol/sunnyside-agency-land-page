@@ -25,6 +25,18 @@ body.no-scroll {
   overflow: hidden;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .header {
   position: absolute;
   top: 35px;
@@ -173,7 +185,7 @@ body.no-scroll {
           align-items: center;
 }
 
-.hero__heading h1 {
+.hero__heading > h1 {
   text-align: center;
   text-transform: uppercase;
   font-family: "Fraunces", serif;
@@ -182,6 +194,12 @@ body.no-scroll {
   font-size: 35px;
   font-weight: 900;
   margin-bottom: 50px;
+}
+
+@media (min-width: 1400px) {
+  .hero__heading > h1 {
+    font-size: 80px;
+  }
 }
 
 .main-cards {

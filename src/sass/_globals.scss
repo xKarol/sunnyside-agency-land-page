@@ -18,3 +18,12 @@ a {
 body.no-scroll {
   overflow: hidden;
 }
+
+.container {
+  width: 100%;
+  @include breakpoint-up(xlarge) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
