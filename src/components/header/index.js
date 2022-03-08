@@ -8,10 +8,11 @@ export default function Header() {
   const [opened, setOpenHamburger] = useState(false);
 
   useEffect(() => {
-    document.body.style.overflow = `${opened ? "hidden" : "visible"}`;
-    return () => {
-      document.body.style.overflow = `${opened ? "hidden" : "visible"}`;
-    };
+    if (opened) {
+      window.scrollTo(0, 0);
+      document.body.classList.add("no-scroll");
+    }
+    return () => document.body.classList.remove("no-scroll");
   }, [opened]);
 
   return (

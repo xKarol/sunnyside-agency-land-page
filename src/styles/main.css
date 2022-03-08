@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   position: absolute;
   top: 35px;
